@@ -14,8 +14,20 @@
         </style>
     </head>
     <body>
+        <script>
+            const list_of_things = [
+                "https://xkcd.com/1",
+                "https://reddit.com/r/adhdmeme/"
+            ]
+            
+
+            function thebutton(){
+                let the_chosen_one = list_of_things[Math.floor(Math.random() * list_of_things.length)];
+                window.open(the_chosen_one, "_blank")
+            }
+        </script>
         <div class="center-my-children">
-            <button onclick="alert('you clicked the button')">the button</button>
+            <button onclick="thebutton()">the button</button>
         </div>
     </body>
 </html>
