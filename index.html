@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            .center-my-children{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            html, body, .center-my-children{
+                min-width: 100vw;
+                min-height: 100vh;
+            }
+        </style>
     </head>
     <body>
-        <button>the button</button>
+        <div class="center-my-children">
+            <button>the button</button>
+        </div>
     </body>
 </html>
