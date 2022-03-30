@@ -11,6 +11,10 @@
                 min-width: 100vw;
                 min-height: 100vh;
             }
+            button {
+                font-size: 5em;
+                padding: 1em
+            }
         </style>
     </head>
     <body>
@@ -20,7 +24,6 @@
                 "https://reddit.com/r/adhdmeme/"
             ]
             
-
             function thebutton(){
                 let the_chosen_one = list_of_things[Math.floor(Math.random() * list_of_things.length)];
                 window.open(the_chosen_one, "_blank")
